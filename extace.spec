@@ -1,7 +1,7 @@
 Summary:	Audio Visualization plugin for GNOME
 Summary(pl):	Wtyczka do wizualizacji d¼wiêku dla desktopu GNOME
 Name:		extace
-Version:	1.4.6
+Version:	1.5.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
@@ -16,6 +16,7 @@ BuildRequires:	esound-devel
 BuildRequires:	fftw-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	imlib-devel
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -42,8 +43,10 @@ oraz The Rasterman.
 %patch -p1
 
 %build
+libtoolize --copy --force
 aclocal
 autoconf
+rm -f missing
 automake -a -c
 %configure \
 	--disable-debug \
