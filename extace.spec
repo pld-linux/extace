@@ -45,7 +45,7 @@ libtoolize --copy --force
 aclocal
 autoconf
 rm -f missing
-automake -a -c
+automake -a -c -f
 %configure \
 	--disable-debug \
 %ifarch sparc sparc64
