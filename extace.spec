@@ -5,8 +5,6 @@ Version:	1.5.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Group(de):	X11/Applikationen/Multimedia
-Group(pl):	X11/Aplikacje/Multimedia
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/eXtace/%{name}-%{version}.tar.gz
 Patch0:		%{name}-ac_am-fixes.patch
 URL:		http://eXtace.sourceforge.net/
