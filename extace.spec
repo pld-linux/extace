@@ -1,16 +1,25 @@
-Summary:	Audio Visualization plugin for Gnome
+Summary:	Audio Visualization plugin for GNOME
+Summary(pl):	Wtyczka do wizualizacji d¼wiêku dla desktopu GNOME
 Name:		extace
-Version:	1.1.10
+Version:	1.4.6
 Release:	1
-Group:		-
-######		Unknown group!
 License:	GPL
-Source0:	http://techdev.buffalostate.edu/~dave/extace/archives/%{name}-%{version}.tar.gz
-URL:		http://techdev.buffalostate.edu/~dave/extace/
+Group:		X11/Applications/Multimedia
+Group(de):	X11/Applikationen/Multimedia
+Group(pl):	X11/Aplikacje/Multimedia
+Source0:	ftp://download.sourceforge.net/pub/sourceforge/eXtace/%{name}-%{version}.tar.gz
+URL:		http://eXtace.sourceforge.net/
+BuildRequires:	esound-devel
+BuildRequires:	fftw-devel
+BuildRequires:	gtk+-devel
+BuildRequires:	imlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
+%define		_mandir		%{_prefix}/man
+
 %description
-Xtace is a Audio Visualization plugin for the Gnome Desktop
+Xtace is a Audio Visualization plugin for the GNOME Desktop
 Environment. It connects to ESD (Enlightened Sound Daemon) and
 displays the audio data as either a 3D textured landscape, 3d pointed
 landscape, 16-128 channel graphic EQ, or a colored Oscilloscope.
@@ -29,16 +38,28 @@ oraz The Rasterman.
 %setup  -q
 
 %build
-LDFLAGS="-s" ; export LDFLAGS
-%configure 
+%configure \
+	--enable-debug \
+%ifnarch sparc sparc64
+	--enable-alsa
+%endif
 
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	Multimediadir=%{_applnkdir}/Multimedia
+
+gzip -9nf AUTHORS CREDITS ChangeLog NEWS README TODO
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc *.gz
+%attr(755,root,root) %{_bindir}/*
+%{_applnkdir}/Multimedia/*
