@@ -40,8 +40,10 @@ oraz The Rasterman.
 %build
 %configure \
 	--disable-debug \
-%ifnarch sparc sparc64
+%ifarch sparc sparc64
 	--disable-alsa
+%else
+	--enable-alsa
 %endif
 
 %{__make}
