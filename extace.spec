@@ -5,7 +5,7 @@ Version:	1.5.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Source0:	ftp://download.sourceforge.net/pub/sourceforge/eXtace/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/extace/%{name}-%{version}.tar.gz
 Patch0:		%{name}-ac_am-fixes.patch
 URL:		http://eXtace.sourceforge.net/
 BuildRequires:	autoconf
@@ -16,7 +16,6 @@ BuildRequires:	gtk+-devel
 BuildRequires:	imlib-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Xtace is a Audio Visualization plugin for the GNOME Desktop
