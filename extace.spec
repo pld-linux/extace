@@ -29,9 +29,9 @@ and The Rasterman.
 %description -l pl
 eXtace jest wtyczk± do wizualizacji d¼wiêku dla desktopu GNOME. £±czy
 siê z ESD (Enlightened Sound Daemon) i wy¶wietla dane audio jako
-trójwymiarowy krajobraz z teksturami, zwyk³y krajobraz trojwymiarowy,
+trójwymiarowy krajobraz z teksturami, zwyk³y krajobraz trójwymiarowy,
 16-128 kana³owy equalizer graficzny lub kolorowy oscyloskop. eXtace
-opiera siê na oryginalnym programi napisanym przez Michaela Fulbrighta
+opiera siê na oryginalnym programie napisanym przez Michaela Fulbrighta
 oraz The Rasterman.
 
 %prep
