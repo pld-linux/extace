@@ -8,7 +8,10 @@ Group:		X11/Applications/Multimedia
 Group(de):	X11/Applikationen/Multimedia
 Group(pl):	X11/Aplikacje/Multimedia
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/eXtace/%{name}-%{version}.tar.gz
+Patch0:		%{name}-ac_am-fixes.patch
 URL:		http://eXtace.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	esound-devel
 BuildRequires:	fftw-devel
 BuildRequires:	gtk+-devel
@@ -35,9 +38,13 @@ opiera siê na oryginalnym programi napisanym przez Michaela Fulbrighta
 oraz The Rasterman.
 
 %prep
-%setup  -q
+%setup -q
+%patch -p1
 
 %build
+aclocal
+autoconf
+automake -a -c
 %configure \
 	--disable-debug \
 %ifarch sparc sparc64
