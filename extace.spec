@@ -63,13 +63,11 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	Multimediadir=%{_applnkdir}/Multimedia
 
-gzip -9nf AUTHORS CREDITS ChangeLog NEWS README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS CREDITS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Multimedia/*
