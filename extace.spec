@@ -39,9 +39,9 @@ oraz The Rasterman.
 
 %build
 %configure \
-	--enable-debug \
+	--disable-debug \
 %ifnarch sparc sparc64
-	--enable-alsa
+	--disable-alsa
 %endif
 
 %{__make}
