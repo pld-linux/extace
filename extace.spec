@@ -41,10 +41,10 @@ oraz The Rasterman.
 %patch -p1
 
 %build
-%{__libtoolize}
-aclocal
-%{__autoconf}
 rm -f missing
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
 %{__automake}
 %configure \
 	--disable-debug \
