@@ -7,7 +7,7 @@ Copyright:	GPL
 Source:		http://techdev.buffalostate.edu/~dave/extace/archives/%{name}-%{version}.tar.gz
 URL:		http://techdev.buffalostate.edu/~dave/extace/
 BuildReqiires:	-
-BuildRoot:   	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Xtace is a Audio Visualization plugin for the Gnome Desktop Environment. It
