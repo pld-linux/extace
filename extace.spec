@@ -43,9 +43,9 @@ oraz The Rasterman.
 %build
 libtoolize --copy --force
 aclocal
-autoconf
+%{__autoconf}
 rm -f missing
-automake -a -c -f
+%{__automake}
 %configure \
 	--disable-debug \
 %ifarch sparc sparc64
