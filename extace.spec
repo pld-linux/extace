@@ -1,12 +1,11 @@
-Summary:	
+Summary:	Audio Visualization plugin for Gnome
 Name:		extace
-Version:	1.10
+Version:	1.1.10
 Release:	1
 Group:		-
 Copyright:	GPL
 Source:		http://techdev.buffalostate.edu/~dave/extace/archives/%{name}-%{version}.tar.gz
 URL:		http://techdev.buffalostate.edu/~dave/extace/
-BuildReqiires:	-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
