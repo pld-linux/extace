@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://dl.sourceforge.net/extace/%{name}-%{version}.tar.gz
+# Source0-md5:	6d430b91241460f900bf01f82920295a
 Patch0:		%{name}-ac_am-fixes.patch
 URL:		http://eXtace.sourceforge.net/
 BuildRequires:	autoconf
