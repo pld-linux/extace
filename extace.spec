@@ -1,5 +1,5 @@
 Summary:	Audio Visualization plugin for GNOME
-Summary(pl):	Wtyczka do wizualizacji dºwiÍku dla desktopu GNOME
+Summary(pl.UTF-8):   Wtyczka do wizualizacji d≈∫wiƒôku dla desktopu GNOME
 Name:		extace
 Version:	1.5.0
 Release:	1
@@ -26,12 +26,12 @@ landscape, 16-128 channel graphic EQ, or a colored Oscilloscope.
 eXtace is based on the original eXtace written by Michael Fulbright
 and The Rasterman.
 
-%description -l pl
-eXtace jest wtyczk± do wizualizacji dºwiÍku dla desktopu GNOME. £±czy
-siÍ z ESD (Enlightened Sound Daemon) i wy∂wietla dane audio jako
-trÛjwymiarowy krajobraz z teksturami, zwyk≥y krajobraz trÛjwymiarowy,
-16-128 kana≥owy equalizer graficzny lub kolorowy oscyloskop. eXtace
-opiera siÍ na oryginalnym programie napisanym przez Michaela Fulbrighta
+%description -l pl.UTF-8
+eXtace jest wtyczkƒÖ do wizualizacji d≈∫wiƒôku dla desktopu GNOME. ≈ÅƒÖczy
+siƒô z ESD (Enlightened Sound Daemon) i wy≈õwietla dane audio jako
+tr√≥jwymiarowy krajobraz z teksturami, zwyk≈Çy krajobraz tr√≥jwymiarowy,
+16-128 kana≈Çowy equalizer graficzny lub kolorowy oscyloskop. eXtace
+opiera siƒô na oryginalnym programie napisanym przez Michaela Fulbrighta
 oraz The Rasterman.
 
 %prep
