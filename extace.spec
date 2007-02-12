@@ -1,5 +1,5 @@
 Summary:	Audio Visualization plugin for GNOME
-Summary(pl.UTF-8):   Wtyczka do wizualizacji dźwięku dla desktopu GNOME
+Summary(pl.UTF-8):	Wtyczka do wizualizacji dźwięku dla desktopu GNOME
 Name:		extace
 Version:	1.5.0
 Release:	1
